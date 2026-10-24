@@ -1,0 +1,32 @@
+INCREMENTALITY on Karlan and List (2007). Input: karlan_list_2007.dta rows 50083 
+Data: Dean Karlan and John A. List (2007), Does Price Matter in Charitable Giving?, Harvard Dataverse, doi:10.7910/DVN/27853, CC0
+
+GROUPS: Match offer n 33396, gave 736 (2.204%), amount per letter $0.967 | Control n 16687, gave 298 (1.786%), amount per letter $0.813
+
+BALANCE (before the mailing, group means)
+              mrm2    hpa  freq years year5 female couple dormant
+Control     12.998 58.960 8.047 6.136 0.514  0.283  0.093   0.523
+Match offer 13.012 59.597 8.035 6.078 0.506  0.275  0.091   0.524
+
+GAVE: +0.418 pts (95% CI 0.157 to 0.668), relative +23%, p 0.0019
+AMOUNT per letter: +$0.154 (95% CI -0.003 to 0.311), relative +19%, p 0.055
+CREDIT vs CAUSE: 736 people who got the offer gave; 596 would have given anyway; about 140 caused (95% range 52 to 223; 19% of the givers)
+HOLDOUT SIZE: to detect this lift in giving at 80% power (alpha 0.05), about 17,561 people per group
+EXTRA MONEY: $5130 across the offer group, $154 per 1,000 letters
+
+CHART DATA
+GIVING RATE BY ARM (Wilson 95% interval):
+  Control            n  16687 gave  298  1.79% (95% CI 1.60 to 2.00)
+  Match offer (all)  n  33396 gave  736  2.20% (95% CI 2.05 to 2.37)
+  Match 1:1          n  11133 gave  231  2.07% (95% CI 1.83 to 2.36)
+  Match 2:1          n  11134 gave  252  2.26% (95% CI 2.00 to 2.56)
+  Match 3:1          n  11129 gave  253  2.27% (95% CI 2.01 to 2.57)
+GIFT SIZE AMONG GIVERS: offer median $25, mean $43.87 (n 736) | control median $25, mean $45.54 (n 298); difference in mean gift $-1.67 (95% CI -7.27 to 3.94, Welch)
+GIFT BANDS, share of givers (offer | control):
+  $1-9      4.2% (31) |   4.0% (12)
+  $10-19   15.1% (111) |  19.1% (57)
+  $20-24   12.6% (93) |   8.7% (26)
+  $25-49   36.1% (266) |  28.9% (86)
+  $50-99   14.4% (106) |  19.5% (58)
+  $100+    17.5% (129) |  19.8% (59)
+MONEY INTERVAL (for the chart): extra gift money per 1,000 letters $154, 95% CI $-3 to $311; zero is inside
