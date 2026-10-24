@@ -1,0 +1,88 @@
+MULTIPLE COMPARISONS on Karlan and List (2007). Input: karlan_list_2007.dta rows 50083 
+Data: Dean Karlan and John A. List (2007), Does Price Matter in Charitable Giving?, Harvard Dataverse, doi:10.7910/DVN/27853, CC0.
+Family: 36 letter versions (3 match ratios x 4 caps x 3 suggested gifts), each vs the plain letter (n 16,687, 298 gave, 1.79%); share who gave, prop.test; alpha 0.05
+Letters per version: 925 to 929
+Versions with a higher giving rate than the plain letter: 29 of 36
+Look like wins at 0.05, uncorrected: 3 of 36
+By chance alone, 36 tests at 0.05 would show about 1.8 false wins
+Kept by Bonferroni: 0
+Kept by Holm: 0
+Kept by Benjamini-Hochberg (5% false discoveries): 0
+Dropped by Holm: 3 of the 3 apparent wins
+Smallest p-value: 0.00468 (1:1 match, $100,000 cap, suggested gift 1.25x, 3.13% gave), Holm-adjusted 0.168, BH-adjusted 0.168
+Bonferroni threshold: 0.00139 (alpha / 36)
+
+                                     test_label n_letters gave  rate p_value
+  1:1 match, $100,000 cap, suggested gift 1.25x       926   29 3.13% 0.00468
+ 2:1 match, no cap stated, suggested gift 1.25x       928   26 2.80% 0.03433
+     3:1 match, $100,000 cap, suggested gift 1x       929   26 2.80% 0.03479
+    3:1 match, $25,000 cap, suggested gift 1.5x       926   25 2.70% 0.05852
+  3:1 match, no cap stated, suggested gift 1.5x       926   25 2.70% 0.05852
+    2:1 match, $50,000 cap, suggested gift 1.5x       928   25 2.69% 0.05994
+    2:1 match, no cap stated, suggested gift 1x       929   25 2.69% 0.06066
+   1:1 match, $50,000 cap, suggested gift 1.25x       928   24 2.59% 0.09984
+      3:1 match, $25,000 cap, suggested gift 1x       927   23 2.48% 0.15727
+   3:1 match, $50,000 cap, suggested gift 1.25x       927   23 2.48% 0.15727
+  2:1 match, $100,000 cap, suggested gift 1.25x       928   23 2.48% 0.15876
+    2:1 match, $25,000 cap, suggested gift 1.5x       929   23 2.48% 0.16025
+    1:1 match, $50,000 cap, suggested gift 1.5x       925   22 2.38% 0.23525
+      2:1 match, $25,000 cap, suggested gift 1x       927   22 2.37% 0.23915
+   2:1 match, $100,000 cap, suggested gift 1.5x       928   22 2.37% 0.24112
+  1:1 match, no cap stated, suggested gift 1.5x       928   22 2.37% 0.24112
+   1:1 match, $25,000 cap, suggested gift 1.25x       929   12 1.29% 0.32384
+   2:1 match, $50,000 cap, suggested gift 1.25x       928   21 2.26% 0.35010
+    3:1 match, $50,000 cap, suggested gift 1.5x       928   21 2.26% 0.35010
+      3:1 match, $50,000 cap, suggested gift 1x       927   20 2.16% 0.48360
+   3:1 match, $25,000 cap, suggested gift 1.25x       928   20 2.16% 0.48652
+    1:1 match, no cap stated, suggested gift 1x       929   20 2.15% 0.48944
+    1:1 match, $25,000 cap, suggested gift 1.5x       927   19 2.05% 0.64470
+   3:1 match, $100,000 cap, suggested gift 1.5x       928   19 2.05% 0.64796
+      1:1 match, $50,000 cap, suggested gift 1x       929   15 1.61% 0.79733
+   1:1 match, $100,000 cap, suggested gift 1.5x       928   15 1.62% 0.80055
+  2:1 match, no cap stated, suggested gift 1.5x       928   15 1.62% 0.80055
+ 1:1 match, no cap stated, suggested gift 1.25x       927   18 1.94% 0.82508
+      1:1 match, $25,000 cap, suggested gift 1x       928   18 1.94% 0.82853
+    3:1 match, no cap stated, suggested gift 1x       928   18 1.94% 0.82853
+   2:1 match, $25,000 cap, suggested gift 1.25x       929   18 1.94% 0.83198
+ 3:1 match, no cap stated, suggested gift 1.25x       928   16 1.72% 0.99140
+     2:1 match, $100,000 cap, suggested gift 1x       927   16 1.73% 0.99484
+     1:1 match, $100,000 cap, suggested gift 1x       929   17 1.83% 1.00000
+      2:1 match, $50,000 cap, suggested gift 1x       925   16 1.73% 1.00000
+  3:1 match, $100,000 cap, suggested gift 1.25x       927   17 1.83% 1.00000
+ p_bonferroni p_holm   p_bh
+       0.1685 0.1685 0.1685
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.3120
+       1.0000 1.0000 0.4493
+       1.0000 1.0000 0.4808
+       1.0000 1.0000 0.4808
+       1.0000 1.0000 0.4808
+       1.0000 1.0000 0.4808
+       1.0000 1.0000 0.5425
+       1.0000 1.0000 0.5425
+       1.0000 1.0000 0.5425
+       1.0000 1.0000 0.5425
+       1.0000 1.0000 0.6634
+       1.0000 1.0000 0.6634
+       1.0000 1.0000 0.6634
+       1.0000 1.0000 0.8009
+       1.0000 1.0000 0.8009
+       1.0000 1.0000 0.8009
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 0.9662
+       1.0000 1.0000 1.0000
+       1.0000 1.0000 1.0000
+       1.0000 1.0000 1.0000
+       1.0000 1.0000 1.0000
+       1.0000 1.0000 1.0000

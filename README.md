@@ -21,6 +21,9 @@ Data: Dean Karlan and John A. List (2007), Does Price Matter in Charitable Givin
 In the randomized pooled comparison the match offer raised giving. The test is a pooled two-proportion z test, with a Newcombe
 hybrid-score interval for the difference. Amount per letter uses a Welch t interval. Full output: `analyses/incrementality/results.txt`.
 
+## A second analysis: 36 versions of the match letter
+The match letter went out in 36 versions (3 match ratios x 4 caps x 3 suggested gifts), about 927 donors each. `analyses/multiple-comparisons/` compares each version with the plain letter on the share who gave. Three versions look like wins at 5% before any correction. After correcting for 36 tries with Bonferroni, Holm or Benjamini-Hochberg, none remains: at this sample size we cannot tell the versions apart, which is not the same as the match offer failing, and the pooled result above still stands. Run it with `Rscript analyses/multiple-comparisons/analysis.R`. The folder README has the table and the method. The idea behind the correction: https://mcpanalytics.ai/articles/multiple-comparisons-problem
+
 ## Files
 | file | what it is |
 |---|---|
@@ -28,6 +31,10 @@ hybrid-score interval for the difference. Amount per letter uses a Welch t inter
 | `data/CREDIT.md` | citation and licence for the data |
 | `analyses/incrementality/analysis.R` | the analysis |
 | `analyses/incrementality/results.txt` | the expected output |
+| `analyses/multiple-comparisons/analysis.R` | the 36-version analysis |
+| `analyses/multiple-comparisons/results.txt` | the expected output |
+| `analyses/multiple-comparisons/pvalues.csv` | a label and a raw p-value per version |
+| `analyses/multiple-comparisons/README.md` | the table, the method and how to run it |
 | `CITATION.cff` | how to cite this repository |
 | `LICENSE` | data CC0 as published; our code MIT |
 
@@ -46,4 +53,4 @@ received a letter, so this measures what the offer caused, not what mailing caus
 - The business explanation: https://mcpanalytics.ai/articles/incrementality-measurement-did-the-campaign-actually-cause-anything
 - A free tool that runs the same method on your own data: https://mcpanalytics.ai/incrementality-test
 
-This repository holds the analysis script, the data and the expected output only.
+This repository holds the analysis scripts, the data and the expected output only.
